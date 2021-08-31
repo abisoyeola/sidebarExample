@@ -24,7 +24,7 @@ const sendSidebarData = (req, res) => {
             // this is where our json format comes to play. innn, my own opinion.
 
             // so we can use this format throughout the project
-            return res.sendStatus(200).send({ Data: localSidebar }).end()
+            return res.sendStatus(201).send({ Data: localSidebar }).end()
 
             //or we can use 
 

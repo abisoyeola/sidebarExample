@@ -32,15 +32,15 @@ const sendSidebarData = (req, res) => {
       // So here, we'd directly send the json data instead of turning the object to json with .json() and .send()
 
       // so we can use this format throughout the project
-      return res.sendStatus(200).send(data).end();
+      return res.sendStatus(201).send(data).end();
 
       //or we can use
 
-        return res.status(200).send({ message: "success" }, data).end()
+        return res.status(201).send({ message: "success" }, data).end()
 
       // //or
 
-      return res.status(200).send(data).end()
+      return res.status(201).send(data).end()
 
       //i always use .end() to end all my responses but idk idk idk idkkkkkkk
 
